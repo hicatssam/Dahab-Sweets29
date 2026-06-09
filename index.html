@@ -4988,5 +4988,160 @@ observeReveal();
   }
 </style>
 
+
+
+<!-- =====================================================
+     FINAL FIX: Mobile details button + branch modal layer
+     This patch must stay at the end of the file
+===================================================== -->
+<style id="dahab-mobile-details-branch-layer-fix">
+  /* Keep product action buttons visible on mobile */
+  .product-actions{
+    display:flex !important;
+    align-items:stretch !important;
+    justify-content:center !important;
+    gap:8px !important;
+    width:100% !important;
+    overflow:visible !important;
+  }
+
+  .product-btn-details,
+  .product-btn-whatsapp,
+  .featured-card-btn,
+  .js-open-product{
+    display:inline-flex !important;
+    align-items:center !important;
+    justify-content:center !important;
+    visibility:visible !important;
+    opacity:1 !important;
+    pointer-events:auto !important;
+    position:relative !important;
+    z-index:80 !important;
+    white-space:nowrap !important;
+  }
+
+  .product-btn-details{
+    flex:1 1 auto !important;
+    min-width:92px !important;
+  }
+
+  .product-btn-whatsapp{
+    flex:0 0 auto !important;
+    min-width:56px !important;
+  }
+
+  /* Branch picker must always appear above product details modal */
+  #modalOverlay.modal-overlay{
+    z-index:2147483000 !important;
+  }
+
+  #productModal.modal{
+    z-index:2147483001 !important;
+  }
+
+  #branchModalOverlay.branch-modal-overlay{
+    z-index:2147483600 !important;
+  }
+
+  #branchModalOverlay.branch-modal-overlay.open{
+    display:flex !important;
+    opacity:1 !important;
+    visibility:visible !important;
+    pointer-events:auto !important;
+  }
+
+  #branchModalOverlay .branch-modal{
+    z-index:2147483601 !important;
+    opacity:1 !important;
+    visibility:visible !important;
+    transform:none !important;
+  }
+
+  @media(max-width:760px){
+    .products-grid,
+    .featured-grid{
+      grid-template-columns:repeat(2,minmax(0,1fr)) !important;
+      gap:12px !important;
+    }
+
+    .product-card,
+    .featured-card{
+      overflow:visible !important;
+    }
+
+    .product-body,
+    .featured-card-body{
+      padding:13px 10px 14px !important;
+      overflow:visible !important;
+    }
+
+    .product-footer,
+    .featured-card-footer{
+      display:flex !important;
+      flex-direction:column !important;
+      align-items:center !important;
+      gap:10px !important;
+      overflow:visible !important;
+    }
+
+    .product-actions{
+      display:grid !important;
+      grid-template-columns:1fr !important;
+      gap:7px !important;
+      width:100% !important;
+      margin-top:2px !important;
+    }
+
+    .product-btn-details,
+    .featured-card-btn{
+      width:100% !important;
+      min-width:0 !important;
+      min-height:38px !important;
+      padding:9px 8px !important;
+      font-size:.74rem !important;
+      line-height:1.2 !important;
+      border-radius:9px !important;
+    }
+
+    .product-btn-whatsapp{
+      width:100% !important;
+      min-width:0 !important;
+      min-height:36px !important;
+      padding:8px !important;
+      font-size:.72rem !important;
+      border-radius:9px !important;
+    }
+
+    .product-btn-whatsapp i{
+      font-size:.9rem !important;
+      margin-inline-end:4px !important;
+    }
+
+    #modalOverlay.modal-overlay,
+    #branchModalOverlay.branch-modal-overlay{
+      padding:12px !important;
+      align-items:center !important;
+    }
+
+    #productModal.modal,
+    #branchModalOverlay .branch-modal{
+      width:min(96vw,540px) !important;
+      max-height:88dvh !important;
+      overflow:auto !important;
+    }
+  }
+
+  @media(max-width:420px){
+    .products-grid,
+    .featured-grid{
+      grid-template-columns:1fr !important;
+    }
+
+    .product-actions{
+      grid-template-columns:1fr 1fr !important;
+    }
+  }
+</style>
+
 </body>
 </html>
