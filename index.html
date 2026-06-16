@@ -1230,7 +1230,7 @@ body{overflow-x:hidden;}
 
 .site-header,.hero,.section,.site-footer,.modal-overlay,.branch-modal-overlay,.back-to-top{position:relative;z-index:5;}
 
-/* دخول السكشنات بشكل واضح */
+
 .reveal-up,.reveal-section,.reveal-card,.reveal-logo,
 .product-card,.featured-card,.custom-example-card,.contact-card{
   transition:opacity .75s ease, transform .75s cubic-bezier(.22,1,.36,1), filter .75s ease, box-shadow .35s ease !important;
@@ -1368,7 +1368,7 @@ body{overflow-x:hidden;}
       rgba(12,6,2,.82) 40%,
       rgba(12,6,2,.65) 100%
     ),
-    url("images/hero-bg-packages.png");
+    url("images/hero-bg-cake.png");
 
   background-size:cover;
   background-position:center;
@@ -1451,7 +1451,7 @@ section, .section, .featured-section, .menu-section, .custom-orders-cta, .custom
 .product-card, .featured-card, .custom-example-card, .reveal-section, .reveal-up, .reveal-card{
   visibility:visible !important;
 }
-.eid-section{background-image: "images/eid-bg.png"; margin-top:0;}
+.eid-section{background-image: "images/hero-bg-cake.png"; margin-top:0;}
 
 
 /* =====================================================
@@ -1558,9 +1558,10 @@ img, video, iframe{
     background:transparent !important;
   }
   .hero-logo-circle img{
-    width:min(330px, 82vw) !important;
-    height:auto !important;
-    max-height:150px;
+   width: 70px;
+   height: 70px;
+   
+  
   }
   .hero-title{
     font-size:clamp(2.15rem, 12vw, 4.2rem) !important;
@@ -1841,7 +1842,7 @@ img, video, iframe{
     </nav>
 
      <div class="hero-logo-circle">
-        <img src="images/logo4.png" />
+        <img style="width: 80px; height: 80px;"  src="images/dahab-sweets.png" />
       </div>
     <button class="hamburger" id="hamburger" aria-label="فتح القائمة">
       <span></span><span></span><span></span>
@@ -1849,10 +1850,11 @@ img, video, iframe{
   </div>
 </header>
 
+
 <div class="mobile-nav-overlay" id="mobileNavOverlay"></div>
 <nav class="mobile-nav" id="mobileNav">
   <button class="mobile-nav-close" id="mobileNavClose"><i class="fa fa-times"></i></button>
-  <div class="mobile-logo"><span class="logo-icon"></span><span>حلويات دهــــب</span></div>
+  <!-- <div class="mobile-logo"><span class="logo-icon"></span><span>حلويات دهــــب</span></div> -->
 
   <a href="#hero" class="mobile-nav-link">الرئيسية</a>
   <a href="#featured" class="mobile-nav-link">الأكثر طلباً</a>
@@ -1869,20 +1871,18 @@ img, video, iframe{
   <div class="hero-content">
   
 
-     <img style="width: 450px;" src="images/logo-dahab2.png" alt="Dahab Sweets Logo" id="heroLogoImage" class="hero-main-logo" />
-    
-    <h1 class="hero-subtitle reveal-up delay-1 " style="width: 590px;">معكـم بـكل فـرحة</h1>
+     <img style="width: 300px;  height: 150px; margin-top: 70px;"  src="images/dahab-sweets.png" alt="Dahab Sweets Logo" id="heroLogoImage" class="hero-main-logo" />
+     <img style="width: 250px; height: 80px; margin-right: 30px;" src="images/logo_transparent.png" alt="Dahab Sweets Logo" id="heroLogoImage" class="hero-main-logo" />
+
     <div class="hero-divider reveal-up delay-2">
-      <span class="divider-line"></span>
-      <!-- <span class="divider-diamond">حلويــــات دهــــب</span> -->
-      <span class="divider-line"></span>
+      
+    
     </div>
-    <div class="hero-buttons reveal-up delay-3">
+    <div class="hero-buttons reveal-up delay-3" style="margin-top: 110px; ">
       <a href="#menu" class="btn btn-gold"><i class="fa fa-utensils"></i> عرض المنيو</a>
       <a href="#customOrders" class="btn btn-outline"><i class="fa fa-wand-magic-sparkles"></i> طلب خاص</a>
-<!-- <a href="/menu/index.html" class="btn btn-outline">
-  <i class="fa fa-wand-magic-sparkles"></i>Test
-</a> -->
+
+
       <a href="https://wa.me/972569896990" class="btn btn-outline" target="_blank" rel="noopener"><i class="fab fa-whatsapp"></i> اطلب الآن</a>
     </div>
   </div>
@@ -1892,24 +1892,23 @@ img, video, iframe{
 
 
 
-<section class="eid-section section" id="eidAdha">
+<section class="eid-section" id="eidAdha">
   <div class="container">
     <div class="eid-card reveal-section">
       <div class="eid-content">
-        <span class="eid-kicker"><i class="fa fa-star-and-crescent"></i> </span>
-        <h2 class="eid-title">دهب يبارك لكم عيد الأضحى المبارك</h2>
-        <p class="eid-text">كل عام وأنتم بخير، ضيافتكم في العيد علينا ألذّ وأرتب. جهّز مناسبتك، اختار من المنيو، أو اطلب كيك خاص بتصميم يناسب فرحتك.</p>
+      
+        <h1>دهـــب معكــم فــي كـــل فرحـــة</h1>
         <div class="eid-actions">
-          <a href="#menu" class="eid-btn primary"><i class="fa fa-gift"></i> شوف ضيافة العيد</a>
-          <a href="#customOrders" class="eid-btn secondary"><i class="fa fa-cake-candles"></i> اطلب كيك عيد خاص</a>
+          <a href="#menu" class="eid-btn primary">اكتشــــف ضيافـــة دهــــب<i class="fa fa-gift"></i> </a>
+          <a href="#customOrders" class="eid-btn secondary"><i class="fa fa-cake-candles"></i> اطلب كيك  خاص</a>
         </div>
       </div>
-      <!-- <div class="eid-visual" aria-hidden="true">
+      <div class="eid-visual" aria-hidden="true">
         <div class="eid-ring"></div>
         <div class="eid-package-orb">
-          <img src="images/hero-bg-packages.png" alt="ضيافة عيد الأضحى من دهب" />
+          <img src="images/hero-bg-cake.png" alt="دهب معكم في كل فرحة" />
         </div>
-      </div> -->
+      </div>
     </div>
   </div>
 </section>
@@ -1953,7 +1952,7 @@ img, video, iframe{
       <button class="filter-btn active" data-category="all">الكل</button>
       <button class="filter-btn" data-category="milkshake">ميلك شيك</button>
       <button class="filter-btn" data-category="eastenSweets">حلويات شرقية</button>
-      <button class="filter-btn" data-category="aidPackages">بكجات العيد</button>
+      <button class="filter-btn" data-category="aidPackages">  بكجات العيد </button>
       <!-- <button class="filter-btn" data-category="westernSweets">حلويات غربية</button> -->
       <button class="filter-btn" data-category="cold">مشروبات باردة</button>
         <button class="filter-btn" data-category="hot">مشروبات ساخنة</button>
@@ -2014,7 +2013,7 @@ img, video, iframe{
         <article class="custom-example-card">
           <div class="custom-example-img">
             <span class="custom-example-tag">ميلاد</span>
-            <img src="images/products/cake/cake-choclate.png" alt="كيكة عيد ميلاد خاصة" />
+            <img src="images/products/cake/cake-happy-birthday.png" alt="كيكة عيد ميلاد خاصة" />
           </div>
           <div class="custom-example-body">
             <h4>كيكة عيد ميلاد</h4>
@@ -2029,7 +2028,7 @@ img, video, iframe{
         <article class="custom-example-card">
           <div class="custom-example-img">
             <span class="custom-example-tag">خطوبة</span>
-            <img src="images/products/cake/cake-rafilo.png" alt="كيكة خطوبة أو مناسبة" />
+            <img src="images/products/cake/cake-new-year.png" alt="كيكة خطوبة أو مناسبة" />
           </div>
           <div class="custom-example-body">
             <h4>كيكة خطوبة ومناسبات</h4>
@@ -2044,7 +2043,7 @@ img, video, iframe{
         <article class="custom-example-card">
           <div class="custom-example-img">
             <span class="custom-example-tag">تخرج</span>
-            <img src="images/products/cake/cake-lutes.png" alt="كيكة تخرج خاصة" />
+            <img src="images/products/cake/graduation-new-year.png" alt="كيكة تخرج خاصة" />
           </div>
           <div class="custom-example-body">
             <h4>كيكة تخرج</h4>
@@ -2059,10 +2058,10 @@ img, video, iframe{
         <article class="custom-example-card">
           <div class="custom-example-img">
             <span class="custom-example-tag">بلاطات</span>
-            <img src="images/products/cake/cake-kinder.png" alt="كيك بلاطات للمناسبات" />
+            <img src="images/products/cake/cake-hej.png" alt="كيك بلاطات للمناسبات" />
           </div>
           <div class="custom-example-body">
-            <h4>كيك نظام بلاطات</h4>
+            <h4>كيك مناسبة </h4>
             <p>مناسب للعزايم والضيافة، مقسّم قطع جاهزة للتقديم مع اختيار النكهة والحجم.</p>
             <div class="custom-example-details">
               <span>30×30</span><span>23 قطعة</span><span>200 ₪</span>
@@ -2080,8 +2079,9 @@ img, video, iframe{
   <div class="container">
     <div class="footer-top">
       <div class="footer-brand">
-        <div class="footer-logo"><span class="logo-icon"></span><span>حلويات دهــــب </span></div>
-        <p class="footer-tagline">طعم يهنيكم وين ما كنتم</p>
+         <img style="width: 200px;  height: 100px; margin-top: 70px;"  src="images/dahab-sweets.png" alt="Dahab Sweets Logo" id="heroLogoImage" class="hero-main-logo" />
+     <img style="width: 120px; height: 50px; margin-right: 40px;" src="images/logo_transparent.png" alt="Dahab Sweets Logo" id="heroLogoImage" class="hero-main-logo" />
+
       </div>
       <div class="footer-links">
         <h4>روابط سريعة</h4>
@@ -2093,13 +2093,20 @@ img, video, iframe{
 
       </div>
       <div class="footer-social">
-        <h4>تابعنا</h4>
+        <h4>تابعنا وتواصل معنا</h4>
         <div class="social-icons">
-    
-          <a href="https://wa.me/972569896990" target="_blank" rel="noopener" aria-label="واتساب"><i class="fab fa-whatsapp"></i></a>
-          <a href="https://instagram.com/dahabsweets" target="_blank" rel="noopener" aria-label="إنستاغرام"><i class="fab fa-instagram"></i></a>
-          <a href="#" aria-label="تيك توك"><i class="fab fa-tiktok"></i></a>
-         
+          <a href="#branches" class="js-footer-whatsapp-branches" data-open-footer-branches="true" aria-label="واتساب الفروع"><i class="fab fa-whatsapp"></i></a>
+          <a href="https://www.instagram.com/dahabsweets/" target="_blank" rel="noopener" aria-label="إنستغرام"><i class="fab fa-instagram"></i></a>
+          <a href="https://www.facebook.com/DahabSweets/" target="_blank" rel="noopener" aria-label="فيسبوك"><i class="fab fa-facebook-f"></i></a>
+        </div>
+        <div class="footer-branches-info">
+          <span><i class="fa fa-store"></i> فرع غزة النصر: 970592303092</span>
+          <span><i class="fa fa-store"></i> فرع دير البلح: 970599700045</span>
+          <span><i class="fa fa-store"></i> فرع النصيرات: 970592555055</span>
+          <span><i class="fa fa-store"></i> فرع السامر: 970597550550</span>
+          <span><i class="fa fa-store"></i> 970597336111 فرع خانيونس: </span>
+           
+        
         </div>
       </div>
     </div>
@@ -2145,6 +2152,7 @@ img, video, iframe{
 </div>
 
 
+
 <audio id="eidAudio" src="audio/eid.mp3" preload="none" loop></audio>
 <div class="eid-audio-widget" id="eidAudioWidget">
   <button class="eid-audio-btn" id="eidAudioBtn" type="button" aria-label="تشغيل موسيقى العيد"><i class="fa fa-music"></i></button>
@@ -2157,18 +2165,21 @@ img, video, iframe{
 
 document.body.classList.add("js-loaded");
 
-const WHATSAPP_NUMBER = "972569896990";
+const WHATSAPP_NUMBER = "970592555055";
 
-// عدّل أرقام الفروع هنا بصيغة دولية بدون + أو 00
 const BRANCHES = [
-  { id: "nuseirat", name: "فرع النصيرات", area: "النصيرات", phone: "972569896990" },
-  { id: "deir_al_balah", name: "فرع دير البلح", area: "دير البلح", phone: "972569896990" },
-  { id: "gaza_al_nasr", name: "فرع غزة النصر", area: "غزة - النصر", phone: "972569896990" },
-  { id: "al_samer", name: "فرع السامر", area: "غزة - السامر ", phone: "972569896990" }
+  { id: "nuseirat", name: "فرع النصيرات", area: "النصيرات", phone: "970592555055" },
+  { id: "deir_al_balah", name: "فرع دير البلح", area: "دير البلح", phone: "970599700045" },
+  { id: "gaza_al_nasr", name: "فرع غزة النصر", area: "غزة - النصر", phone: "970592303092" },
+  { id: "al_samer", name: "فرع السامر", area: "غزة - السامر ", phone: "970597550550" },
+  { id: "khan-younis", name: "فرع خانوينس", area: "خانيونس", phone: "970597336111" }
+  
 ];
+
 
 let pendingWhatsappMessage = "";
 let pendingProduct = null;
+
 
 const WESTERN_CATEGORIES = ["milkshake","waffle","crepe","miniCake","miniPanCake","icecream","cake","cheaseCake"];
 const WESTERN_BRANCHES = ["nuseirat","deir_al_balah"];
@@ -2265,11 +2276,12 @@ const products = [
   // Milkshakes
   // =========================
   
+
   {
     id: 1,
     name: "وافل مكس",
     category: "waffle",
-    price: "45 ₪",
+    price: "30 ₪",
     image: "images/products/wafel/wafle-mix.png",
     description: "وافل مكس بتشكيلة صوصات وإضافات متنوعة لطعم أغنى وتجربة فاخرة.",
     featured: true,
@@ -2283,7 +2295,7 @@ const products = [
     id: 2,
     name: "كريب نوتيلا",
     category: "crepe",
-    price: "25 ₪",
+    price: "20 ₪",
     image: "images/products/crepe/crepe-nutlle.png",
     description: "كريب طري محشو بالنوتيلا، يقدم بطعم شوكولاتة غني وقوام ناعم.",
     featured: false,
@@ -2293,7 +2305,7 @@ const products = [
     id: 3,
     name: "كريب لوتس",
     category: "crepe",
-    price: "30 ₪",
+    price: "20 ₪",
     image: "images/products/crepe/crepe-lutes.png",
     description: "كريب لوتس غني بكريمة اللوتس وقطع البسكويت بطعم كراميلي مميز.",
     featured: false,
@@ -2303,7 +2315,7 @@ const products = [
     id: 4,
     name: "كريب بستاشيو",
     category: "crepe",
-    price: "30 ₪",
+    price: "25 ₪",
     image: "images/products/crepe/crepe-pistachio.png",
     description: "كريب بستاشيو فاخر بطعم الفستق الغني وصوص كريمي ناعم.",
     featured: false,
@@ -2313,7 +2325,7 @@ const products = [
     id: 5,
     name: "كريب كيندر",
     category: "crepe",
-    price: "35 ₪",
+    price: "25 ₪",
     image: "images/products/crepe/crepe-kinder.png",
     description: "كريب مكس يجمع أكثر من نكهة وصوص في قطعة واحدة بطعم متوازن وفاخر.",
     featured: true,
@@ -2323,7 +2335,7 @@ const products = [
     id: 6,
     name: "كريب مكس",
     category: "crepe",
-    price: "35 ₪",
+    price: "25 ₪",
     image: "images/products/crepe/crepe-mix.png",
     description: "كريب مكس يجمع أكثر من نكهة وصوص في قطعة واحدة بطعم متوازن وفاخر.",
     featured: true,
@@ -2390,7 +2402,7 @@ const products = [
     id: 12,
     name: "ميني موس شوكولاتة",
     category: "miniCake",
-    price: "25 ₪",
+    price: "17 ₪",
     image: "images/products/mini-cake/mini-mose-choclate.png",
     description: "موس شوكولاتة ناعم بقوام خفيف وطعم كاكاو غني.",
     featured: false,
@@ -2414,7 +2426,7 @@ const products = [
     id: 14,
     name: "هوت كيك",
     category: "miniCake",
-    price: "25 ₪",
+    price: "20 ₪",
     image: "images/products/mini-cake/hot-cake.png",
     description: "كافيه لاتيه ساخن بحليب كريمي وقهوة ناعمة ومتوازنة.",
     featured: false,
@@ -2436,7 +2448,7 @@ const products = [
     id: 16,
     name:  "ميني بان كيك",
     category: "miniCake",
-    price: "25 ₪",
+    price: "20 ₪",
     image: "images/products/mini-cake/mini-pan-cake.png",
     description: "كافيه لاتيه ساخن بحليب كريمي وقهوة ناعمة ومتوازنة.",
     featured: false,
@@ -2450,7 +2462,7 @@ const products = [
     id: 17,
     name: "كيك الشوكولاتة ",
     category: "cake",
-    price: "25 ₪",
+    price: "17 ₪",
     image: "images/products/cake/cake-choclate.png",
     description: "كيك شوكولاتة غني بطبقات كريمية ناعمة لعشاق الطعم الكاكاوي.",
     featured: false,
@@ -2460,7 +2472,7 @@ const products = [
     id: 18,
     name: "كيك اللوتس ",
     category: "cake",
-    price: "30 ₪",
+    price: "20 ₪",
     image: "images/products/cake/cake-lutes.png",
     description: "كيك لوتس فاخر بطعم بسكويت كراميلي وكريمة ناعمة.",
     featured: false,
@@ -2470,7 +2482,7 @@ const products = [
     id: 19,
     name: "كيك البستاشيو ",
     category: "cake",
-    price: "30 ₪",
+    price: "20 ₪",
     image: "images/products/cake/cake-pistachio.png",
     description: "كيك بستاشيو راقٍ بطعم الفستق الغني ولمسة كريمية فاخرة.",
     featured: false,
@@ -2480,7 +2492,7 @@ const products = [
     id: 20,
     name: "كيك الكيندر ",
     category: "cake",
-    price: "30 ₪",
+    price: "25 ₪",
     image: "images/products/cake/cake-kinder.png",
     description: "كيك كيندر بطبقات ناعمة وشوكولاتة بالحليب بطعم مميز.",
     featured: false,
@@ -2517,7 +2529,7 @@ const products = [
     name: "تشيز كيك لوتس",
     category: "cheaseCake",
     price: "30 ₪",
-    image: "images/products/chease-cake/chease-cake-lues.png",
+    image: "images/products/chease-cake/chease-cake-lutes.png",
     description: "تشيز كيك لوتس بطعم كراميلي غني وقاعدة بسكويت مقرمشة.",
     featured: false,
     emoji: "🍰"
@@ -2527,7 +2539,7 @@ const products = [
     name: "تشيز كيك نوتيلا",
     category: "cheaseCake",
     price: "25 ₪",
-    image: "images/products/chease-cake/chease-cake-nutle.png",
+    image: "images/products/chease-cake/chease-cake-nutella.png",
     description: "تشيز كيك نوتيلا بطبقة شوكولاتة ناعمة وطعم غني.",
     featured: false,
     emoji: "🍰"
@@ -2547,7 +2559,7 @@ const products = [
     name: "تشيز كيك بستاشيو",
     category: "cheaseCake",
     price: "30 ₪",
-    image: "images/products/chease-cake/chease-cake-pisachio.png",
+    image: "images/products/chease-cake/chease-cake-pistachio.png",
     description: "تشيز كيك بستاشيو فاخر بطعم الفستق وكريمة غنية.",
     featured: false,
     emoji: "🥜"
@@ -2572,8 +2584,8 @@ const products = [
     id: 28,
     name: "قهوة حجم كبير ",
     category: "hot",
-    price: "7 ₪",
-    image: "images/products/hot-drinks/samll-.png",
+    price: "10 ₪",
+    image: "images/products/hot-drinks/big-coffee.png",
     description: "إسبريسو إيطالي مركز بطعم قوي ورائحة قهوة غنية.",
     featured: false,
     emoji: "☕"
@@ -2592,7 +2604,7 @@ const products = [
     id: 30,
     name: "إسبريسو كبير",
     category: "hot",
-    price: "12 ₪",
+    price: "10 ₪",
     image: "images/products/hot-drinks/espresso-coffee-big.png",
     description: "دبل إسبريسو إيطالي لمحبي القهوة المركزة بطعم أقوى.",
     featured: false,
@@ -2602,7 +2614,7 @@ const products = [
     id: 31,
     name: "كابتشينو",
     category: "hot",
-    price: "20 ₪",
+    price: "15 ₪",
     image: "images/products/hot-drinks/captachino.png",
     description: "كابتشينو ساخن بإسبريسو وحليب مبخر ورغوة ناعمة.",
     featured: false,
@@ -2612,8 +2624,8 @@ const products = [
     id: 32,
     name: "كافيه لاتيه",
     category: "hot",
-    price: "25 ₪",
-    image: "images/products/hot-drinks/coffee-lathie.png",
+    price: "15 ₪",
+    image: "images/products/hot-drinks/coffee-lathi.png",
     description: "كافيه لاتيه ساخن بحليب كريمي وقهوة ناعمة ومتوازنة.",
     featured: false,
     emoji: "☕"
@@ -2622,7 +2634,7 @@ const products = [
     id: 33,
     name: "كافيه موكا",
     category: "hot",
-    price: "25 ₪",
+    price: "20 ₪",
     image: "images/products/hot-drinks/coffee-moka.png",
     description: "كافيه موكا يجمع بين القهوة والشوكولاتة بطعم دافئ وغني.",
     featured: false,
@@ -2633,8 +2645,8 @@ const products = [
     id: 34,
     name: " هوت شوكلت",
     category: "hot",
-    price: "25 ₪",
-    image: "images/products/hot-drinks/coffee-lathie.png",
+    price: "15 ₪",
+    image: "images/products/hot-drinks/hot-choclate.png",
     description: "كافيه لاتيه ساخن بحليب كريمي وقهوة ناعمة ومتوازنة.",
     featured: false,
     emoji: "☕"
@@ -2644,7 +2656,7 @@ const products = [
     id: 35,
     name: "كوفي نوتيلا",
     category: "hot",
-    price: "25 ₪",
+    price: "20 ₪",
     image: "images/products/hot-drinks/coffee-nutelle.png",
     description: "كافيه لاتيه ساخن بحليب كريمي وقهوة ناعمة ومتوازنة.",
     featured: false,
@@ -2652,28 +2664,28 @@ const products = [
   },
 
 
-    {
-    id: 36,
-    name: "هوت شوكلت",
-    category: "hot",
-    price: "25 ₪",
-    image: "images/products/hot-drinks/hot-choclate.png",
-    description: "كافيه لاتيه ساخن بحليب كريمي وقهوة ناعمة ومتوازنة.",
-    featured: false,
-    emoji: "☕"
-  },
+  //   {
+  //   id: 36,
+  //   name: "هوت شوكلت",
+  //   category: "hot",
+  //   price: "25 ₪",
+  //   image: "images/products/hot-drinks/hot-choclate.png",
+  //   description: "كافيه لاتيه ساخن بحليب كريمي وقهوة ناعمة ومتوازنة.",
+  //   featured: false,
+  //   emoji: "☕"
+  // },
 
   
-    {
-    id: 37,
-    name: "هوت شوكلت",
-    category: "hot",
-    price: "25 ₪",
-    image: "images/products/hot-drinks/hot-choclate.png",
-    description: "كافيه لاتيه ساخن بحليب كريمي وقهوة ناعمة ومتوازنة.",
-    featured: false,
-    emoji: "☕"
-  },
+  //   {
+  //   id: 37,
+  //   name: "هوت شوكلت",
+  //   category: "hot",
+  //   price: "25 ₪",
+  //   image: "images/products/hot-drinks/hot-choclate.png",
+  //   description: "كافيه لاتيه ساخن بحليب كريمي وقهوة ناعمة ومتوازنة.",
+  //   featured: false,
+  //   emoji: "☕"
+  // },
   // =========================
   // Cold Drinks
   // =========================
@@ -2681,7 +2693,7 @@ const products = [
     id: 38,
     name: " آيس لاتيه فانيلا ",
     category: "cold",
-    price: "25 ₪",
+    price: "20 ₪",
     image: "images/products/cold-drinks/ice-latih-vanella.png",
     description: "آيس لاتيه بارد بقهوة ناعمة وحليب كريمي منعش.",
     featured: false,
@@ -2691,7 +2703,7 @@ const products = [
     id: 39,
     name: " آيس لاتيه كراميل ",
     category: "cold",
-    price: "25 ₪",
+    price: "20 ₪",
     image: "images/products/cold-drinks/ice-latih-caramel.png",
     description: "آيس لاتيه بارد بقهوة ناعمة وحليب كريمي منعش.",
     featured: false,
@@ -2702,7 +2714,7 @@ const products = [
     id: 40,
     name: "موهيتو عنب",
     category: "cold",
-    price: "25 ₪",
+    price: "20 ₪",
     image: "images/products/cold-drinks/mogito-grapes.png",
     description: "آيس لاتيه بارد بقهوة ناعمة وحليب كريمي منعش.",
     featured: false,
@@ -2712,7 +2724,7 @@ const products = [
     id: 41,
     name: "موهيتو جرين لوف ",
     category: "cold",
-    price: "25 ₪",
+    price: "20 ₪",
     image: "images/products/cold-drinks/mohito-green.png",
     description: "آيس لاتيه بارد بقهوة ناعمة وحليب كريمي منعش.",
     featured: false,
@@ -2723,7 +2735,7 @@ const products = [
     id: 42,
     name: "موهيتو ايس لاند ",
     category: "cold",
-    price: "25 ₪",
+    price: "20 ₪",
     image: "images/products/cold-drinks/mohito-island.png",
     description: "آيس لاتيه بارد بقهوة ناعمة وحليب كريمي منعش.",
     featured: false,
@@ -2733,7 +2745,7 @@ const products = [
     id: 43,
     name: "موهيتو الكتريك بلو ",
     category: "cold",
-    price: "25 ₪",
+    price: "20 ₪",
     image: "images/products/cold-drinks/mohito-electric-blue.png",
     description: "آيس لاتيه بارد بقهوة ناعمة وحليب كريمي منعش.",
     featured: false,
@@ -2744,7 +2756,7 @@ const products = [
     id: 44,
     name: "موهيتو  ليمون ونعنع ",
     category: "cold",
-    price: "25 ₪",
+    price: "15 ₪",
     image: "images/products/cold-drinks/mohito-lamonada.png",
     description: "آيس لاتيه بارد بقهوة ناعمة وحليب كريمي منعش.",
     featured: false,
@@ -2754,7 +2766,7 @@ const products = [
     id: 45,
     name: "عصير مانجا",
     category: "cold",
-    price: "25 ₪",
+    price: "15 ₪",
     image: "images/products/cold-drinks/mango-juice.png",
     description: "آيس لاتيه بارد بقهوة ناعمة وحليب كريمي منعش.",
     featured: false,
@@ -2764,7 +2776,7 @@ const products = [
     id: 46,
     name: "عصير برتقال",
     category: "cold",
-    price: "25 ₪",
+    price: "15 ₪",
     image: "images/products/cold-drinks/orange-juice.png",
     description: "آيس لاتيه بارد بقهوة ناعمة وحليب كريمي منعش.",
     featured: false,
@@ -2776,7 +2788,7 @@ const products = [
     id: 47,
     name: "عصير فراولة",
     category: "cold",
-    price: "25 ₪",
+    price: "15 ₪",
     image: "images/products/cold-drinks/strawberry-juice.png",
     description: "آيس لاتيه بارد بقهوة ناعمة وحليب كريمي منعش.",
     featured: false,
@@ -2787,7 +2799,7 @@ const products = [
     id: 48,
     name: "عصير ليمون ونعناع",
     category: "cold",
-    price: "25 ₪",
+    price: "15 ₪",
     image: "images/products/cold-drinks/lemonada-juice.png",
     description: "آيس لاتيه بارد بقهوة ناعمة وحليب كريمي منعش.",
     featured: false,
@@ -2801,54 +2813,62 @@ const products = [
   // =========================
   {
     id: 49,
-    name: "بكج العيد الفاخر",
+    name: "بكج المناسبات",
     category: "aidPackages",
     price: "150 ₪",
     image: "images/products/aid-packages/aid-package.png",
     description: "بكج عيد فاخر بتشكيلة حلويات شرقية مناسبة للضيافة والمناسبات.",
     featured: true,
-    emoji: "🍱"
+    emoji: "🍱",
+     sizes: [
+           { label: "نصف كيلو",  price: "90₪" },
+          { label: "كيلو", price: "150₪" },
+    ]
   },
   {
     id: 50,
-    name: "بكج العيد الفاخر",
-    category: "aidPackages",
-    price: "150 ₪",
-    image: "images/products/aid-packages/package-dahab.png",
-    description: "تشكيلة عيد أنيقة من الحلويات الشرقية بتقديم مرتب وفاخر.",
-    featured: true,
-    emoji: "🍱"
-  },
-  {
-    id: 51,
-    name: "بكج العيد الفاخر",
-    category: "aidPackages",
-    price: "150 ₪",
-    image: "images/products/aid-packages/aid-package2.png",
-    description: "بكج حلويات شرقية مناسب للزيارات والعزائم بطابع فاخر.",
-    featured: true,
-    emoji: "🍱"
-  },
-  {
-    id: 52,
-    name: "بكج العيد المشكل",
-    category: "aidPackages",
-    price: "150 ₪",
-    image: "images/products/aid-packages/aid-package3.png",
-    description: "بكج مشكل يضم أكثر من صنف شرقي لتقديم ضيافة متنوعة.",
-    featured: true,
-    emoji: "🍱"
-  },
-  {
-    id: 53,
-    name: "بكج العيد المشكل",
+    name: "بكج المناسبات",
     category: "aidPackages",
     price: "150 ₪",
     image: "images/products/aid-packages/aid-package4.png",
-    description: "تشكيلة عيد مشكلة بطعم شرقي غني وتقديم مناسب للمناسبات.",
+    description: "تشكيلة عيد أنيقة من الحلويات الشرقية بتقديم مرتب وفاخر.",
     featured: true,
-    emoji: "🍱"
+    emoji: "🍱",
+    sizes: [
+           { label: "نصف كيلو",  price: "90₪" },
+          { label: "كيلو", price: "150₪" },
+    ]
   },
+  // {
+  //   id: 51,
+  //   name: "بكج العيد الفاخر",
+  //   category: "aidPackages",
+  //   price: "150 ₪",
+  //   image: "images/products/aid-packages/aid-package2.png",
+  //   description: "بكج حلويات شرقية مناسب للزيارات والعزائم بطابع فاخر.",
+  //   featured: true,
+  //   emoji: "🍱"
+  // },
+  // {
+  //   id: 52,
+  //   name: "بكج العيد المشكل",
+  //   category: "aidPackages",
+  //   price: "150 ₪",
+  //   image: "images/products/aid-packages/aid-package3.png",
+  //   description: "بكج مشكل يضم أكثر من صنف شرقي لتقديم ضيافة متنوعة.",
+  //   featured: true,
+  //   emoji: "🍱"
+  // },
+  // {
+  //   id: 53,
+  //   name: "بكج العيد المشكل",
+  //   category: "aidPackages",
+  //   price: "150 ₪",
+  //   image: "images/products/aid-packages/aid-package4.png",
+  //   description: "تشكيلة عيد مشكلة بطعم شرقي غني وتقديم مناسب للمناسبات.",
+  //   featured: true,
+  //   emoji: "🍱"
+  // },
 
   // =========================
   // Eastern Sweets
@@ -2869,7 +2889,7 @@ const products = [
     name: " كنافة قشطة",
     category: "eastenSweets",
     price: "12 ₪",
-    image: "images/products/easten-sweet/",
+    image: "images/products/easten-sweet/كنافة-قشطة.png",
     description: "صينية عربية مشكلة تضم أصنافًا شرقية متنوعة بطابع ضيافة أصيل.",
     featured: true,
     emoji: "🍽️"
@@ -2950,7 +2970,7 @@ const products = [
     id: 63,
     name: "مشكل عادي",
     category: "eastenSweets",
-    price: "25 ₪",
+    price: "12 ₪",
     image: "images/products/easten-sweet/مشكل-عادي.png",
     description: "بقلاوة محشوة بالجبن بطبقات مقرمشة وشيرة خفيفة.",
     featured: false,
@@ -2961,7 +2981,7 @@ const products = [
     name: " مشكل كاجو",
     category: "eastenSweets",
     price: "20 ₪",
-    image: "images/products/easten-sweet/بقلاوة-بالجبن.png",
+    image: "images/products/easten-sweet/مشكل-كاجو.png",
     description: "بقلاوة محشوة بالجبن بطبقات مقرمشة وشيرة خفيفة.",
     featured: false,
     emoji: "🥮"
@@ -2988,10 +3008,10 @@ const products = [
   },
   {
     id: 67,
-    name: "كيك نظام بلاطات",
+    name: "كيك مناسبات",
     category: "cake",
     price: "120 ₪",
-    image: "images/products/cake/cake-choclate.png",
+    image: "images/products/cake/graduation-new-year.png",
     description: "كيكة بلاطات مرتبة للمناسبات والضيافة، مقسّمة قطع جاهزة للتقديم.",
     featured: true,
     emoji: "🎂",
@@ -3006,7 +3026,7 @@ const products = [
     id: 68,
     name: "ميلك شيك نوتيلا",
     category: "milkshake",
-    price: "25 ₪",
+    price: "20 ₪",
     image: "images/products/milk-shake/milk-shake-nutelle.png",
     description: "ميلك شيك غني بنكهة النوتيلا، قوامه كريمي ومناسب لعشاق الشوكولاتة.",
     featured: true,
@@ -3066,7 +3086,7 @@ const products = [
     id: 74,
     name: "ميلك شيك بستاشيو",
     category: "milkshake",
-    price: "25 ₪",
+    price: "20 ₪",
     image: "images/products/milk-shake/milk-shake-pistachio.png",
     description: "ميلك شيك بستاشيو فاخر بنكهة فستق غنية وقوام كريمي مميز.",
     featured: true,
@@ -3077,7 +3097,7 @@ const products = [
     id: 75,
     name: "ميلك شيك لوتس",
     category: "milkshake",
-    price: "25 ₪",
+    price: "20 ₪",
     image: "images/products/milk-shake/milk-shake-lutes.png",
     description: "ميلك شيك كراميل بطعم غني ومتوازن مع قوام كريمي ناعم.",
     featured: false,
@@ -3091,7 +3111,7 @@ const products = [
     id: 76,
     name: "وافل كيندر بوينو",
     category: "waffle",
-    price: "40 ₪",
+    price: "30 ₪",
     image: "images/products/wafel/wafle-kinder.png",
     description: "وافل طازج مغطى بصوص الكيندر وقطع الشوكولاتة بطعم غني ومميز.",
     featured: false,
@@ -3101,7 +3121,7 @@ const products = [
     id: 77,
     name: "وافل نوتيلا",
     category: "waffle",
-    price: "35 ₪",
+    price: "25 ₪",
     image: "images/products/wafel/wafle-nutlle.png",
     description: "وافل ساخن بطبقة نوتيلا غنية، مناسب لمحبي الطعم الكلاسيكي.",
     featured: false,
@@ -3111,8 +3131,8 @@ const products = [
     id: 78,
     name: "وافل بستاشيو",
     category: "waffle",
-    price: "35 ₪",
-    image: "images/products/wafel/wafle-nutlle.png",
+    price: "30 ₪",
+    image: "images/products/wafel/wafle-pistachio.png",
     description: "وافل ساخن بطبقة نوتيلا غنية، مناسب لمحبي الطعم الكلاسيكي.",
     featured: false,
     emoji: "🧇"
@@ -3121,12 +3141,14 @@ const products = [
     id: 79,
     name: "وافل لوتس",
     category: "waffle",
-    price: "35 ₪",
-    image: "",
+    price: "25 ₪",
+    image: "images/products/wafel/wafle-lutes.png",
     description: "وافل ساخن بطبقة نوتيلا غنية، مناسب لمحبي الطعم الكلاسيكي.",
     featured: false,
     emoji: "🧇"
   },
+
+
 
 ];
 
@@ -4060,6 +4082,49 @@ observeReveal();
     height: 185px !important;
   }
 }
+
+/* ---- MOBILE FOOTER CENTER FIX ---- */
+@media (max-width: 760px) {
+  .site-footer,
+  .site-footer * {
+    text-align: center !important;
+  }
+
+  .footer-top {
+    grid-template-columns: 1fr !important;
+    justify-items: center;
+    align-items: center;
+    gap: 28px;
+  }
+
+  .footer-brand,
+  .footer-links,
+  .footer-social {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center !important;
+    justify-content: center;
+  }
+
+  .footer-logo {
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .footer-links a {
+    text-align: center;
+  }
+
+  .social-icons {
+    justify-content: center;
+  }
+
+  .footer-bottom {
+    text-align: center !important;
+  }
+}
 </style>
 <script id="dahab-real-final-render-fix">
 (function(){
@@ -4174,11 +4239,14 @@ observeReveal();
    This block runs in capture mode so the smooth-scroll links cannot block WhatsApp actions. */
 (function(){
   const FALLBACK_BRANCHES = [
-    { id: "nuseirat", name: "فرع النصيرات", area: "النصيرات", phone: "972569896990" },
-    { id: "deir_al_balah", name: "فرع دير البلح", area: "دير البلح", phone: "972569896990" },
-    { id: "gaza_al_nasr", name: "فرع غزة النصر", area: "غزة - النصر", phone: "972569896990" },
-    { id: "al_samer", name: "فرع السامر", area: "غزة- السامر ", phone: "972569896990" }
+    { id: "nuseirat", name: "فرع النصيرات", area: "النصيرات", phone: "970592555055" },
+  { id: "deir_al_balah", name: "فرع دير البلح", area: "دير البلح", phone: "970599700045" },
+  { id: "gaza_al_nasr", name: "فرع غزة النصر", area: "غزة - النصر", phone: "970592303092" },
+  { id: "al_samer", name: "فرع السامر", area: "غزة - السامر ", phone: "970597550550" },
+  { id: "khan-younis", name: "فرع خانوينس", area: "خانيونس", phone: "970597336111" }
   ];
+ 
+
   const WESTERN_CATEGORIES_FIX = ["milkshake","waffle","crepe","miniCake","miniPanCake","icecream","cake","cheaseCake"];
   const WESTERN_BRANCHES_FIX = ["nuseirat","deir_al_balah"];
   let fixedPendingMessage = "";
@@ -4595,11 +4663,13 @@ observeReveal();
   'use strict';
 
   const FALLBACK_BRANCHES = [
-    { id:'nuseirat', name:'فرع النصيرات', area:'النصيرات', phone:'972569896990', note:'الحلويات الشرقية والغربية متوفرة' },
-    { id:'deir_al_balah', name:'فرع دير البلح', area:'دير البلح', phone:'972569896990', note:'الحلويات الشرقية والغربية متوفرة' },
-    { id:'gaza_al_naser', name:'فرع غزة النصر', area:'غزة - النصر', phone:'972569896990', note:'الحلويات الغربية قريباً' },
-    { id:'branch_four', name:'الفرع الرابع', area:'قريباً', phone:'972569896990', note:'الحلويات الغربية قريباً' }
+    { id: "nuseirat", name: "فرع النصيرات", area: "النصيرات", phone: "970592555055" },
+  { id: "deir_al_balah", name: "فرع دير البلح", area: "دير البلح", phone: "970599700045" },
+  { id: "gaza_al_nasr", name: "فرع غزة النصر", area: "غزة - النصر", phone: "970592303092" },
+  { id: "al_samer", name: "فرع السامر", area: "غزة - السامر ", phone: "970597550550" },
+  { id: "khan-younis", name: "فرع خانوينس", area: "خانيونس", phone: "970597336111" }
   ];
+
 
   const WESTERN_CATEGORIES_SAFE = ['waffle','crepe','miniCake','miniPanCake','icecream','cake','cheaseCake'];
   const WESTERN_ALLOWED_SAFE = ['nuseirat','deir_al_balah'];
@@ -5142,6 +5212,313 @@ observeReveal();
     }
   }
 </style>
+
+
+
+<!-- =====================================================
+     DAHAB UX PATCH: Sticky menu categories + luxury motion
+     Added by ChatGPT
+===================================================== -->
+<style id="dahab-sticky-categories-luxury-motion-fix">
+  /* Make the menu category buttons stay visible while products are being browsed */
+  #menu,
+  .menu-section,
+  .menu-section .container{
+    overflow:visible !important;
+  }
+
+  #categoryFilters.category-filters{
+    position:sticky !important;
+    top:86px !important;
+    z-index:2147482500 !important;
+    margin-bottom:32px !important;
+    padding:12px 12px !important;
+    border-radius:18px !important;
+    background:rgba(9,5,2,.84) !important;
+    border:1px solid rgba(243,198,107,.28) !important;
+    box-shadow:0 16px 45px rgba(0,0,0,.38), 0 0 24px rgba(185,130,36,.12) !important;
+    backdrop-filter:blur(14px) !important;
+    -webkit-backdrop-filter:blur(14px) !important;
+    transition:transform .35s ease, box-shadow .35s ease, border-color .35s ease, background .35s ease !important;
+  }
+
+  #categoryFilters.category-filters.is-floating{
+    transform:translateY(0) scale(1.01) !important;
+    border-color:rgba(243,198,107,.48) !important;
+    background:rgba(9,5,2,.92) !important;
+    box-shadow:0 20px 58px rgba(0,0,0,.52), 0 0 34px rgba(185,130,36,.20) !important;
+    animation:dahabMenuPopIn .38s ease both;
+  }
+
+  @keyframes dahabMenuPopIn{
+    from{opacity:.72;transform:translateY(-10px) scale(.985)}
+    to{opacity:1;transform:translateY(0) scale(1.01)}
+  }
+
+  #categoryFilters .filter-btn{
+    position:relative;
+    overflow:hidden;
+  }
+
+  #categoryFilters .filter-btn::after{
+    content:"";
+    position:absolute;
+    inset:0;
+    background:linear-gradient(110deg,transparent 0%,rgba(255,231,169,.16) 45%,transparent 64%);
+    transform:translateX(140%) skewX(-14deg);
+    transition:transform .55s ease;
+    pointer-events:none;
+  }
+
+  #categoryFilters .filter-btn:hover::after,
+  #categoryFilters .filter-btn.active::after{
+    transform:translateX(-140%) skewX(-14deg);
+  }
+
+  @media(max-width:760px){
+    #categoryFilters.category-filters{
+      top:72px !important;
+      display:flex !important;
+      justify-content:flex-start !important;
+      flex-wrap:nowrap !important;
+      overflow-x:auto !important;
+      overflow-y:hidden !important;
+      gap:10px !important;
+      padding:10px 10px 12px !important;
+      border-radius:16px !important;
+      scroll-snap-type:x mandatory;
+      scrollbar-width:none;
+      -webkit-overflow-scrolling:touch;
+    }
+
+    #categoryFilters.category-filters::-webkit-scrollbar{display:none}
+
+    #categoryFilters .filter-btn{
+      flex:0 0 auto !important;
+      white-space:nowrap !important;
+      scroll-snap-align:center;
+      min-width:max-content !important;
+    }
+  }
+
+  /* Luxury motion for branches and special-cake sections */
+  @media (prefers-reduced-motion:no-preference){
+    .custom-orders-card,
+    .special-jump-cta,
+    .branch-card,
+    .custom-example-card,
+    .contact-card{
+      animation:dahabLuxuryFloat 5.6s ease-in-out infinite;
+      will-change:transform;
+    }
+
+    .branch-card:nth-child(2),
+    .custom-example-card:nth-child(2),
+    .contact-card:nth-child(2){animation-delay:.35s}
+
+    .branch-card:nth-child(3),
+    .custom-example-card:nth-child(3),
+    .contact-card:nth-child(3){animation-delay:.70s}
+
+    .branch-card:nth-child(4),
+    .custom-example-card:nth-child(4),
+    .contact-card:nth-child(4){animation-delay:1.05s}
+
+    @keyframes dahabLuxuryFloat{
+      0%,100%{transform:translateY(0)}
+      50%{transform:translateY(-7px)}
+    }
+
+    .custom-orders-card::after,
+    .special-jump-cta::after{
+      content:"";
+      position:absolute;
+      inset:-2px;
+      pointer-events:none;
+      border-radius:inherit;
+      background:linear-gradient(110deg,transparent 0%,rgba(255,225,150,.16) 45%,transparent 62%);
+      transform:translateX(120%);
+      animation:dahabLuxuryShine 4.8s ease-in-out infinite;
+      mix-blend-mode:screen;
+    }
+
+    @keyframes dahabLuxuryShine{
+      0%,55%{transform:translateX(120%)}
+      100%{transform:translateX(-120%)}
+    }
+
+    .branch-card:hover,
+    .custom-example-card:hover,
+    .contact-card:hover{
+      animation-play-state:paused;
+    }
+  }
+</style>
+
+<script id="dahab-sticky-categories-luxury-motion-script">
+(function(){
+  const categoryFilters = document.getElementById('categoryFilters');
+  const menuSection = document.getElementById('menu') || document.querySelector('.menu-section');
+
+  if(categoryFilters && menuSection){
+    const setFloatingState = () => {
+      const menuTop = menuSection.getBoundingClientRect().top;
+      const menuBottom = menuSection.getBoundingClientRect().bottom;
+      const shouldFloat = menuTop < 100 && menuBottom > 220;
+      categoryFilters.classList.toggle('is-floating', shouldFloat);
+    };
+
+    window.addEventListener('scroll', setFloatingState, { passive:true });
+    window.addEventListener('resize', setFloatingState);
+    setFloatingState();
+
+    categoryFilters.addEventListener('click', function(e){
+      const activeBtn = e.target.closest('.filter-btn');
+      if(!activeBtn) return;
+      setTimeout(() => {
+        activeBtn.scrollIntoView({ behavior:'smooth', inline:'center', block:'nearest' });
+      }, 80);
+    });
+  }
+})();
+</script>
+
+
+
+<!-- =====================================================
+     DAHAB FOOTER CONTACT PATCH
+     WhatsApp footer button opens all branches
+===================================================== -->
+<style id="dahab-footer-contact-branches-fix">
+  .footer-branches-info{
+    margin-top:16px;
+    display:grid;
+    gap:8px;
+    color:rgba(246,225,187,.66);
+    font-size:.82rem;
+    line-height:1.65;
+  }
+
+  .footer-branches-info span{
+    display:flex;
+    align-items:center;
+    gap:8px;
+  }
+
+  .footer-branches-info i{
+    color:#d8a442;
+    font-size:.78rem;
+  }
+
+  @media(max-width:760px){
+    .site-footer,
+    .site-footer *{
+      text-align:center !important;
+    }
+
+    .footer-top{
+      grid-template-columns:1fr !important;
+      justify-items:center !important;
+      align-items:center !important;
+      gap:28px !important;
+    }
+
+    .footer-brand,
+    .footer-links,
+    .footer-social{
+      width:100% !important;
+      display:flex !important;
+      flex-direction:column !important;
+      align-items:center !important;
+      justify-content:center !important;
+    }
+
+    .footer-brand img{
+      margin-left:auto !important;
+      margin-right:auto !important;
+    }
+
+    .social-icons{
+      justify-content:center !important;
+    }
+
+    .footer-branches-info{
+      justify-items:center !important;
+      width:100% !important;
+    }
+
+    .footer-branches-info span{
+      justify-content:center !important;
+    }
+  }
+</style>
+
+<script id="dahab-footer-whatsapp-branches-script">
+(function(){
+  const footerBranches = [
+   { id: "nuseirat", name: "فرع النصيرات", area: "النصيرات", phone: "970592555055" },
+  { id: "deir_al_balah", name: "فرع دير البلح", area: "دير البلح", phone: "970599700045" },
+  { id: "gaza_al_nasr", name: "فرع غزة النصر", area: "غزة - النصر", phone: "970592303092" },
+  { id: "al_samer", name: "فرع السامر", area: "غزة - السامر ", phone: "970597550550" },
+  { id: "khan-younis", name: "فرع خانوينس", area: "خانيونس", phone: "970597336111" }
+  ];
+
+
+  function footerWhatsappUrl(phone, message){
+    return 'https://wa.me/' + phone + '?text=' + encodeURIComponent(message);
+  }
+
+  function openFooterBranches(){
+    const overlay = document.getElementById('branchModalOverlay');
+    const list = document.getElementById('branchList');
+    const title = document.getElementById('branchModalTitle');
+    const note = document.getElementById('branchAvailabilityNote');
+    const text = document.querySelector('.branch-modal-text');
+
+    if(!overlay || !list) return;
+
+    if(title) title.textContent = 'اختار الفرع للتواصل عبر واتساب';
+    if(text) text.textContent = 'اضغط على الفرع المناسب وسيتم فتح واتساب مباشرة.';
+    if(note){
+      note.style.display = 'block';
+      note.innerHTML = '<i class="fa fa-circle-info"></i> جميع أرقام الفروع ظاهرة هنا للتواصل السريع.';
+    }
+
+    list.innerHTML = footerBranches.map(function(b, i){
+      return `
+        <button type="button" class="branch-card" data-footer-branch-index="${i}">
+          <strong>${b.name}</strong>
+          <span>${b.area}</span>
+          <em><i class="fab fa-whatsapp"></i> تواصل مع الفرع</em>
+        </button>
+      `;
+    }).join('');
+
+    overlay.classList.add('open');
+    document.body.style.overflow = 'hidden';
+  }
+
+  document.addEventListener('click', function(e){
+    const footerWhatsapp = e.target.closest('[data-open-footer-branches], .js-footer-whatsapp-branches');
+    if(footerWhatsapp){
+      e.preventDefault();
+      e.stopPropagation();
+      openFooterBranches();
+      return;
+    }
+
+    const branchBtn = e.target.closest('[data-footer-branch-index]');
+    if(branchBtn){
+      e.preventDefault();
+      e.stopPropagation();
+      const branch = footerBranches[Number(branchBtn.dataset.footerBranchIndex)];
+      if(branch){
+        window.open(footerWhatsappUrl(branch.phone, 'السلام عليكم، بدي أتواصل مع ' + branch.name), '_blank');
+      }
+    }
+  }, true);
+})();
+</script>
 
 </body>
 </html>
