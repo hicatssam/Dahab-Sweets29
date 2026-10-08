@@ -25,7 +25,7 @@
     .section-btn { flex: 0 0 auto; border-radius: 999px; min-height: 44px; padding: 8px 14px; font-size: 13px; }
     .section-btn[aria-current="page"] { background: var(--gold-soft); border-color: var(--gold-soft); color: #211a11; }
     .viewer { position: relative; width: min(100%, calc(clamp(280px, 100svh - 225px, 960px) * 2245 / 4371)); aspect-ratio: 2245 / 4371; perspective: 2000px; touch-action: pan-y pinch-zoom; user-select: none; }
-    .magazine { width: 100%; height: 100%; position: relative; }
+    .magazine { width: 100%; height: 100%; position: relative; perspective: 2000px; }
     .page-stack { position: absolute; inset: 4px -4px -4px 4px; border-radius: 10px; background: #b6ad97; box-shadow: 0 18px 40px #0007; }
     .page, .flip-page { position: absolute; inset: 0; overflow: hidden; border-radius: 8px; background: #fff; backface-visibility: hidden; }
     .page { z-index: 1; }
@@ -98,6 +98,7 @@
     let locked = false;
     let gesture = null;
     let turnTimer;
+    let incomingPage = null;
 
     function loadPage(index) {
       if (!cache.has(index)) {
@@ -123,6 +124,7 @@
     }
     function finishTurn() {
       clearTimeout(turnTimer);
+      if (incomingPage) { pageBox.replaceChildren(incomingPage); incomingPage = null; }
       flipPage.className = 'flip-page';
       flipPage.replaceChildren();
       locked = false;
@@ -138,7 +140,11 @@
         const forward = target > current;
         const turningImage = forward ? pageBox.firstChild : img;
         if (turningImage && !motion.matches) flipPage.replaceChildren(turningImage.cloneNode());
-        pageBox.replaceChildren(img.cloneNode());
+        incomingPage = img.cloneNode();
+        if (forward || motion.matches || !turningImage) {
+          pageBox.replaceChildren(incomingPage);
+          incomingPage = null;
+        }
         current = target;
         status.textContent = '';
         updateControls();
